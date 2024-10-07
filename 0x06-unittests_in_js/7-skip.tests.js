@@ -9,7 +9,9 @@ describe('Testing numbers', () => {
     expect(2 === 2).to.be.true;
   });
 
-  it.skip('1 is equal to 3', () => {
+  it('1 is equal to 3', function () {
+    // Skip this test programmatically
+    this.skip();
     expect(1 === 3).to.be.true;
   });
 
